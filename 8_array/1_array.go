@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -55,8 +57,14 @@ func main() {
 	fmt.Println(arr5)
 
 	/*
-	Limitations
-Fixed Size: Once declared, the size of an array cannot be changed.
-Use Slices for Flexibility: Slices are preferred in Go for dynamic collections.
+			Limitations
+		Fixed Size: Once declared, the size of an array cannot be changed.
+		Use Slices for Flexibility: Slices are preferred in Go for dynamic collections.
 	*/
+
+	//muilti dimentional array
+
+	var arr6 [2][3]int
+	fmt.Println(arr6) //[[0 0 0] [0 0 0]]
+
 }
