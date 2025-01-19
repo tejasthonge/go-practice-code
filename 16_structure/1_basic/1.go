@@ -17,7 +17,10 @@ type Persion struct {
 }
 
 func main() {
-
+	//here we creting the instance of stuct Persion
+	//if we not set value then it hase zerovalued
+	//int->0 ,string->' ',bool -->false 
+	//this above are zerovalued 
 	var persion1 Persion = Persion{
 		name:    "Tejas",
 		age:     23,

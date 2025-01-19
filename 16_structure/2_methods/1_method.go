@@ -14,10 +14,19 @@ func (c Company) IncreegeEmpCout() { //here no afet on it
 }
 
 
+
 func (c *Company) IncmetEmpCout() {  //we geting address of instance of the Company
 	c.empCount++//her stuct atomatic convert that is derefaning  them as value
 }
 
+//creating the instance by hiding the all by uing the method as 
+
+func  NewCompany(name string,empCount int16) Company{ //here we retuning the stuct 
+	return Company{ 
+		name: name,
+		empCount: empCount,
+	}
+}	
 
 func main() {
 
@@ -33,4 +42,11 @@ func main() {
 	fmt.Println(myComp)
 	//so any modiction on the stuct by the method wecreate method like secton
 
+
+	//creting the new instance of Compy struct by using the method
+	var com2 Company =NewCompany( 
+		"Quoppo",
+		100,
+	)
+	fmt.Println(com2)
 }
