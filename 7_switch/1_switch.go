@@ -46,7 +46,7 @@ func main() {
 	//type swith
 
 	whoAmi := func(i interface{}) {
-		switch i.(type) {
+		switch i.(type) { // this .(type) only we use inside the swith statement only
 		case string:
 			fmt.Println(i, "it is string")
 		case int:
@@ -69,7 +69,7 @@ func main() {
 }
 
 /*
-OP: 
+OP:
 
 three
 Monday
