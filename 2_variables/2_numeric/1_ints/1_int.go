@@ -21,7 +21,7 @@ func main() {
 	fmt.Println(phoneNumber)
 	fmt.Println(pin)
 	fmt.Println(pin2)
-
+	
 	// we can store all this above values in int
 	//go intenly mangae the storge automaticly
 	var nagVal int = -31
